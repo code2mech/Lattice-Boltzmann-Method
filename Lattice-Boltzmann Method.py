@@ -111,7 +111,7 @@ def main():
             pyplot.imshow(curl, cmap="bwr")
             #pyplot.colorbar().set_label("Vorticity Magnitude")
             #pyplot.imshow(np.sqrt(ux**2 + uy**2))
-            pyplot.savefig( "Lattice-Boltzmann" + str(pic))           #saves pictures in the same directory
+            pyplot.savefig( "Lattice-Boltzmann-" + str(pic))           #saves pictures in the same directory
             pyplot.pause(0.01)
             pyplot.cla()
             pic=pic+1
