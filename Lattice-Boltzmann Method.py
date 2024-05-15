@@ -109,6 +109,7 @@ def main():
             
            
             pyplot.imshow(curl, cmap="bwr")
+            pyplot.gca().add_patch(pyplot.Circle((Nx//4,Ny//2),13, color="black"))
             #pyplot.colorbar().set_label("Vorticity Magnitude")
             #pyplot.imshow(np.sqrt(ux**2 + uy**2))
             pyplot.savefig( "Lattice-Boltzmann-" + str(pic))           #saves pictures in the same directory
